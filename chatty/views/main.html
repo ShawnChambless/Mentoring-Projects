@@ -1,0 +1,13 @@
+</div>
+<div class="header">
+  <h3 class="text-muted">chatty</h3>
+  <form ng-submit='sendMessage(newMessage)'>
+  <input class="form-control" type="text" ng-model='newMessage' placeholder="New Message...">
+  <!-- <input type="submit" ng-click='sendMessage(newMessage)' value='submit'> -->
+  </form>
+</div>
+
+<h4>Latest Chats:</h4>
+<div class="jumbotron" ng-repeat='message in messages'>
+    {{message}}
+</div>

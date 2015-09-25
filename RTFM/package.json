@@ -1,0 +1,24 @@
+{
+  "name": "rtfm",
+  "version": "1.0.0",
+  "description": "RTFM ====",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DevMountain/RTFM.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/DevMountain/RTFM/issues"
+  },
+  "homepage": "https://github.com/DevMountain/RTFM#readme",
+  "dependencies": {
+    "angular": "^1.4.5",
+    "angular-route": "^1.4.5",
+    "angularfire": "^1.1.2"
+  }
+}
