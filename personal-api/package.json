@@ -15,5 +15,12 @@
   "bugs": {
     "url": "https://github.com/DevMountain/personal-api/issues"
   },
-  "homepage": "https://github.com/DevMountain/personal-api#readme"
+  "homepage": "https://github.com/DevMountain/personal-api#readme",
+  "dependencies": {
+    "angular": "^1.4.6",
+    "angular-route": "^1.4.6",
+    "body-parser": "^1.14.0",
+    "cors": "^2.7.1",
+    "express": "^4.13.3"
+  }
 }
