@@ -1,0 +1,19 @@
+h1 Admin
+
+form
+    input(type='text' ng-model='newProduct.name' placeholder='Name...')
+    input(type='number' ng-model='newProduct.price' placeholder='Price...')
+    input(type='number' ng-model='newProduct.qty' placeholder='Qty...')
+    input(type='submit' ng-click='addProduct(newProduct)')
+    
+.products
+    div(ng-repeat='product in products | orderBy: "name"')
+        div(ng-click='showUpdateForm = !showUpdateForm')
+            span {{product.name}} 
+            span {{product.qty}}
+        form(ng-show='showUpdateForm')
+            input(type='text' ng-model='product.name' placeholder='Name...')
+            input(type='number' ng-model='product.price' placeholder='Price...')
+            input(type='number' ng-model='product.qty' placeholder='Qty...')
+            input(type='submit' ng-click='updateProduct(product._id, product)')
+            input(type='submit' ng-click='deleteProduct(product._id, $index); showUpdateForm = false' value='Delete')
