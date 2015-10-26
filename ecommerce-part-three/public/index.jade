@@ -1,0 +1,19 @@
+doctype html
+html
+    head
+        title Ecommerce 3!
+        link(href='main.css' rel='stylesheet')
+    body(ng-app='ecommerce')
+    
+        ng-view
+    
+        script(src='node_modules/angular/angular.js')
+        script(src='node_modules/angular-route/angular-route.js')
+        script(src='node_modules/angular-ui-grid/ui-grid.js')
+        script(src='app/app.js')
+        script(src='app/home/homeService.js')
+        script(src='app/home/homeCtrl.js')
+        script(src='app/admin/adminCtrl.js')
+        script(src='app/admin/adminService.js')
+        script(src='app/cart/cartService.js')
+        script(src='app/cart/cartCtrl.js')
